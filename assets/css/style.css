@@ -4,7 +4,7 @@
     background-repeat: repeat;
     background-position: center;
     background-size: 60%;
-    height: 150px; 
+    height: 125px; 
     overflow-x: scroll;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -21,6 +21,9 @@ h1{
     margin-bottom: 0px;
     color: white !important;
     padding-bottom: 5px;
+    font-weight: bold;
+    
+   
 }
 
 small{
@@ -35,17 +38,22 @@ small{
 
 body{
     background-color: whitesmoke;
+    font-family: 'Menlo', sans-serif;
+    font-size: 9px;
 }
 
 .search{
     background-color: transparent;
-    margin: 5px;
+    margin-top: 5px;
    min-width: 200px;
    clear: both;
-
-    
+   text-align: center;
+   
 
 }
+
+
+
 .gifsDiv{
     display: inline-block;
     margin: 5px;
@@ -60,6 +68,13 @@ body{
     margin: 2px;
 }
 
-#clearImages, #clearTags {
+#clearImages, #clearTags, .tags{
     margin-top: 5px;
+    font-size: 14px;
+
+}
+
+#gifMe{
+    padding: 5px 5px;
+
 }
