@@ -1,26 +1,31 @@
 .jumbotron{
     background-color: transparent;
     background-image: url(../images/cloud.png);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: center;
+    background-size: 60%;
     height: 150px; 
     overflow-x: scroll;
     margin-top: 0px;
     margin-bottom: 0px;
     border-bottom: solid black 5px;
+    text-align: center;
     
 }
 
 h1{
     margin-top: 0px;
-    background-color: lightskyblue;
-    text-shadow: 2px 1px black;
+    background-color: rgb(140, 48, 168);
+    text-shadow: 2px 2px black;
     border-bottom: solid  black 5px;
     margin-bottom: 0px;
-    color: white;
+    color: white !important;
     padding-bottom: 5px;
 }
 
+small{
+    color: lemonchiffon !important;
+}
 .gifWrap{
     margin-top: 10px;
     text-align: center;
@@ -35,6 +40,9 @@ body{
 .search{
     background-color: transparent;
     margin: 5px;
+   min-width: 200px;
+   clear: both;
+
     
 
 }
@@ -42,8 +50,16 @@ body{
     display: inline-block;
     margin: 5px;
     text-align: center;
-    background-color:black;
+    background-color:rgb(0, 0, 0);
     color: white;
-    padding: 3px;
+    padding: 3px 5px;
 
+}
+
+.tags{
+    margin: 2px;
+}
+
+#clearImages, #clearTags {
+    margin-top: 5px;
 }

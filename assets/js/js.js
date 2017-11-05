@@ -5,7 +5,7 @@ var tags = [];
 function popButtons() {      
     $(".buttonHolder").empty();    
         for (var i = 0; i < tags.length; i++) {
-              var pop = $("<button type='button' class='btn btn-success'>");
+              var pop = $("<button type='button' class='btn btn-lg btn-success'>");
               pop.addClass("tags");
               pop.attr("data-name", tags[i]);
                pop.text(tags[i]);
@@ -42,9 +42,10 @@ $("#gifMe").on("click", function(event) {
               // Storing rating data
               var rating = giphy[i].rating;
               var p1 = $("<p>").text("Rating: " + rating);
-    
+              var p2 = $("<p>").text("Click me!");
               // Displays rating
               gifsDiv.append(p1);
+              
             // Grabbing still image
               var stillURL = giphy[i].images.fixed_height_still.url;
               var animatedURL = giphy[i].images.fixed_height.url;
@@ -55,6 +56,7 @@ $("#gifMe").on("click", function(event) {
                 $(gif).attr("animatedURL", animatedURL);
               // Displaying the gif
               gifsDiv.append(gif);
+              gifsDiv.append(p2);
              
               $(".gifWrap").prepend(gifsDiv);
             }
@@ -76,6 +78,16 @@ $("#gifMe").on("click", function(event) {
             }
         }
         
+        $("#clearTags").on("click", function(event) {
+            event.preventDefault();
+                    $(".buttonHolder").empty();
+                    tags = [];
+                  });
+         $("#clearImages").on("click", function(event) {
+                    event.preventDefault();
+                            $(".gifWrap").empty();
+                            
+                          });
 // Allows all buttons with class tags to be clicked to display gifs.
 $(document).on("click", ".tags", gifMe);
 // 
