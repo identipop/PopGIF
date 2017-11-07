@@ -19,6 +19,7 @@ $("#gifMe").on("click", function(event) {
             var tag = $("#tagInput").val().trim();
             tags.push(tag);
             popButtons();
+            $("#tagInput").val('');
           });
  // gifMe function adds data search info onto page
     function gifMe() {
